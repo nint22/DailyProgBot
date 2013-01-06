@@ -17,7 +17,7 @@ import AccountDetails
 
 # Returns a string in the format of "1/17/2013", always rounding up to Mon, Wed, or Fri
 def GetAssumedDate():
-  
+	
 	# Current date
 	Now = datetime.datetime.today()
 	
@@ -200,10 +200,6 @@ def PostChallenge(DifficultyIndex):
 
 # Main application entry point
 def main():
-	
-	# Testing
-	PostChallenge(2)
-	return
 	
 	# What day of the week are we? This decides the difficulty type!
 	DayOfWeek = datetime.datetime.today().weekday()
