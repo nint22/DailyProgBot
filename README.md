@@ -27,3 +27,5 @@ To deploy such a system, simply run the "DailyProgBot.py" Python file next to an
     # Google account username & pass
     GSPREAD_USERNAME = 'Username@gmail.com'
     GSPREAD_PASSWORD = 'Password'
+
+Please note that this code is writen as a simple and quick script, and does not follow "good programming practices" for comercial systems, such as using oAuth2.0 (rather than using a simple username / password as it currently does). You've been warned!
