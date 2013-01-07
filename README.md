@@ -6,9 +6,9 @@ The r/DailyProgrammer's automated submission bot source-code
 About
 -----
 
-This is simply a single-file Python script that, when launched on certain days of the week, will retrieve a certain difficulty of programming challenge from a Google Document Spreadsheet, format it and post it for Reddit, and finally update the target Subreddit's links.
+DailyProgBot is a simple challenge-queue submission bot for r/DailyProgrammer. Users submit challenges through a Google Documents form, then the bot crawls said form, posting the appropriate challenge on the appropriate day of the week.
 
-This code is specificly designed for r/DailyProgrammer's automated submission system for queued programming challenges.
+This is simply a single-file Python script that, when launched on certain days of the week through a cron-job on nint22's server.
 
 The only two dependancies are the GSpread (Google Spreadsheet interface) and the PRAW Python Reddit API. Special thanks to those devs for making much of this work so much easier!
 
@@ -29,3 +29,5 @@ To deploy such a system, simply run the "DailyProgBot.py" Python file next to an
     GSPREAD_PASSWORD = 'Password'
 
 Please note that this code is writen as a simple and quick script, and does not follow "good programming practices" for comercial systems, such as using oAuth2.0 (rather than using a simple username / password as it currently does). You've been warned!
+
+There is no license on this code - do with it as you please.
