@@ -123,7 +123,7 @@ def PostChallenge(DifficultyIndex):
 	
 	# Create reddit interface with username & password
 	# Note: we don't care about oAuth2, since this isn't that important
-	PrawInterface = praw.Reddit(user_agent='DailyProgrammerBot')
+	PrawInterface = praw.Reddit(user_agent='DailyProgrammerBot 1.0 by /u/nint22 github.com/nint22/DailyProgBot/')
 	
 	if DifficultyIndex == 0:
 		PrawInterface.login(AccountDetails.EASY_USERNAME, AccountDetails.EASY_PASSWORD)
